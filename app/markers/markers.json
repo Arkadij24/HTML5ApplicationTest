@@ -1,0 +1,16 @@
+[
+    {
+        "markerId": "marker1",
+        "position":{
+            "lat": "52.508742",
+            "lng": "-0.220850"
+        }
+    },
+    {
+        "markerId": "marker2",
+        "position":{
+            "lat": "53.508742",
+            "lng": "-0.250850"
+        }
+    }
+]
