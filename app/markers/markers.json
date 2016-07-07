@@ -2,15 +2,29 @@
     {
         "markerId": "marker1",
         "position":{
-            "lat": "52.508742",
-            "lng": "-0.220850"
+            "lat": 52.508742,
+            "lng": -0.220850
         }
     },
     {
         "markerId": "marker2",
         "position":{
-            "lat": "53.508742",
-            "lng": "-0.250850"
+            "lat": 53.508742,
+            "lng": -0.250850
+        }
+    },
+    {
+        "markerId": "marker3",
+        "position":{
+            "lat": 50.508742,
+            "lng": -0.850850
+        }
+    },
+    {
+        "markerId": "marker4",
+        "position":{
+            "lat": 54.508742,
+            "lng": 1.250850
         }
     }
 ]
