@@ -7,6 +7,7 @@ angular.module('mapView').
                function MapViewController(Map) {
                     var markers = Map.query();
                     var path = [];
+                    var poly = new google.maps.Polygon();
                     
                     //var markery = this.markers;
                     var myCenter = new google.maps.LatLng(51.508742,-0.120850);
@@ -54,15 +55,18 @@ angular.module('mapView').
                      google.maps.event.addListener(map, 'click', function(event) {
                         placeMarker(event.latLng);
                         path.push(event.latLng);
-                        var flightPath=new google.maps.Polygon({
+                        poly.setMap(null);
+                        poly = new google.maps.Polygon({
                             path: path,
                             strokeColor: getRandomColor(),
                             strokeOpacity:0.8,
                             strokeWeight:2,
                             fillColor: getRandomColor(),
                             fillOpacity:0.4,
+                            editable: true,
                             map: map
                         });
+                        
                      });
 
                      function placeMarker(location) {
